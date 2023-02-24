@@ -1,54 +1,190 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>RecordLabel</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website desing</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header> 
+            <a href="#" class="logo">Foods</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            <ul class="navbar">
+                <li><a href="#home"> Home </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </header>
+
+        <!-- HOME KEZDETE -->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>My english food menu</h1>
+                <h2>Food <br> The most precious thing</h2>
+            </div>
+
+            <div class="home-img">
+                <img src="home.png">
+            </div>
+        </section>
+
+        <!-- ABOUT US RÉSZLEG -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="about.png">
+            </div>
+
+            <div class="about-text">
+                <span>About Us</span>
+                <h2>We speak the good <br> food language </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint illo, possimus quod similique delectus quis incidunt inventore, a ratione totam consequuntur asperiores. Ratione, culpa officiis.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </section>
+
+        <!----KAJA MENŰ KEZDÉSE ---->
+
+        <section class="menu" id="menu">
+            <div class="heading">
+                <span>Food menu</span>
+                <h2>Fresh taste and great price</h2>
+            </div>
+
+            <!---KAJÁK FELSOROLÁSA-->
+            <div class="menu-container">
+                <div class="box">
+                    <div class="box-img">
+                        <img src="food1.png">
+                    </div>
+                    <h2>Chiken Burger</h2>
+                    <h3>Tasty Food</h3>
+                    <span>$11.00</span>
+                    <div class="cart-solid-24-img">
+                        <img src="cart-solid-24.png">
+                    </div>
+                </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="food2.png">
+                        </div>
+                        <h2>Chiken Burger</h2>
+                        <h3>Tasty Food</h3>
+                        <span>$11.00</span>
+                        <div class="cart-solid-24-img">
+                            <img src="cart-solid-24.png">
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="food3.png">
+                            </div>
+                            <h2>Chiken Burger</h2>
+                            <h3>Tasty Food</h3>
+                            <span>$11.00</span>
+                            <div class="cart-solid-24-img">
+                                <img src="cart-solid-24.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!----SERVICE / SZOLGÁLTATÁS(OK) KEZDETE -->
+        <section class="services" id="services">
+            <div class="heading">
+                <span>Servives</span>
+                <h2>We provide the best quality food</h2>
+            </div>
+            <div class="service-container">
+                <div class="s-box">
+                    <img src="s1.png">
+                    <h3>Our terms of service</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor quasi totam tempore nulla magni. In nulla architecto autem sint! Neque aliquid blanditiis rerum sit molestias, cum optio nobis ab.</p>
+                </div>
+                <div class="s-box">
+                    <img src="s2.png">
+                    <h3>Shipping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor quasi totam tempore nulla magni. In nulla architecto autem sint! Neque aliquid blanditiis rerum sit molestias, cum optio nobis ab.</p>
+                </div>
+                <div class="s-box">
+                    <img src="s3.png">
+                    <h3>Delivery service</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor quasi totam tempore nulla magni. In nulla architecto autem sint! Neque aliquid blanditiis rerum sit molestias, cum optio nobis ab.</p>
+                </div>
+            </div>
+        </section>
+        <!--SZOLGÁLTATÁS-->
+        <section class="cta">
+            <h2>We make quality food <br> Every day </h2>
+            <a href="#" class="btn">Lets talk</a>
+        </section>
+
+        <!--- FOOTER KEZDETE --->
+        <section id="contact">
+            <div class="footer">
+                <div class="main">
+                    <div class="col">
+                        <h4>Menu Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                        </div>
+
+                        <div class="col">
+                            <h4>Our service</h4>
+                            <ul>
+                                <li><a href="#">Web desing</a></li>
+                                <li><a href="#">Web development</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Product Management</a></li>
+                                <li><a href="#">Graphic desing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Delivery information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & conditions</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <h4>Contact us</h4>
+                            <div class="social"></div>
+                                <a href="#"><img src="facebook-logo.png"></a>
+                                <a href="#"><img src="instagram-logo.png"></a>
+                                <a href="#"><img src="twitter-logo.png"></a>
+                                <a href="#"><img src="youtube-logo.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!--JAVA SCRIP-->
+        <script type="text/javasript" src="js/script.js"></script>
+           
+    </body>
 </html>
