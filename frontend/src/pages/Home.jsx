@@ -1,5 +1,5 @@
 import React from 'react';
-import kep from '../images/record.jpg';
+import kep from './src/images';
 
 const Home = () => {
   return (

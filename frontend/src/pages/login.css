@@ -1,0 +1,19 @@
+/* This is the login page style */
+.body { 
+    background-color: #ebf4ff;
+}
+
+.login-form { 
+    width: 300px;
+    padding: 15px;
+    margin: 30px auto;
+    background-color: #FFF; 
+    border-radius: 10px;
+}
+
+.login-form .submit-btn { 
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #1197ff;
+    color: #FFFFFF;
+}
