@@ -14,13 +14,7 @@ app.use('/records', require('./routes/recordRoutes'));
 const PORT = process.env.PORT || 3500;
 
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.MONGO_URI, (err) => {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log('Sikeres csatlakozás!');
-        app.listen(PORT, () => {
-            console.log(`http://localhost:${PORT}`);
-        });
-    }
+mongoose.connect(process.env.MONGO_URI).then(res => console.log('Sikeres csatlakozás!')).catch(err => console.log(err)); 
+app.listen(PORT, () => {
+    console.log(`http://localhost:${PORT}`);
 });
