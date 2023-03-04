@@ -1,5 +1,14 @@
 import React from 'react';
-import kep from '../images/kep1.png';
+import kep1 from '../images/kep1.png';
+import kep2 from '../images/kep2.png';
+import kep3 from '../images/kep7.png';
+import kep4 from '../images/kep3.png';
+import kep5 from '../images/kep4.png';
+import kep6 from '../images/kep5.png';
+import kep7 from '../images/kep6.png';
+
+
+
 
 const Home = () => {
   return (
@@ -35,30 +44,29 @@ const Home = () => {
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src={kep} className="d-block w-100" alt="..." />
+                <img src={kep1} className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block elso">
-                  <h5>First slide label</h5>
+                  <h5>Lustmord and Aethek</h5>
                   <p>
-                    Some representative placeholder content for the first slide.
+                  Scorn Soundtrack 2xLP (Black Vinyl)
                   </p>
                 </div>
               </div>
               <div className="carousel-item">
-                <img src={kep} className="d-block w-100" alt="..." />
+                <img src={kep2} className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
+                  <h5>Hotline Miami 1 & 2</h5>
                   <p>
-                    Some representative placeholder content for the second
-                    slide.
+                  The Complete Collection Boxset 8xLP (Black Vinyl)
                   </p>
                 </div>
               </div>
               <div className="carousel-item">
-                <img src={kep} className="d-block w-100" alt="..." />
+                <img src={kep3} className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
+                  <h5>Mick Gordon</h5>
                   <p>
-                    Some representative placeholder content for the third slide.
+                  Doom Original Game Soundtrack 2xLP (Red Vinyl)
                   </p>
                 </div>
               </div>
@@ -96,6 +104,20 @@ const Home = () => {
       <div className="row"></div>
     </div>
   );
+
+return (
+<div class="container">
+<img src="{kep4}" alt="..." />
+<p>Description of image 1</p>
+<img src="{kep5}" alt="..." />
+  <p>Description of image 2</p>
+<img src="{kep6}" alt="..." />
+<p>Description of image 3</p>
+<img src="{kep7}" alt="..." />
+<p>Description of image 4</p>
+</div>
+);
+
 };
 
 export default Home;

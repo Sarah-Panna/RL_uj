@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Record from './pages/Record';
 
+
 function App() {
   return (
     <div className="app">
@@ -21,7 +22,12 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+    
   );
-}
+
+  }
+
+
+
 
 export default App;

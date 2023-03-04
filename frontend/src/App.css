@@ -1,9 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 .app {
-  background-color: rgb(236, 98, 25);
-  height: max(100%, 100vh);
+  background-color: rgba(214, 65, 28, 0.926);
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
 }
 
 .navbar-container {
@@ -14,8 +17,9 @@
 }
 
 .navbar-container .logo {
+  color: azure;
   font-size: 3em;
-  font-family: 'Zeyada', cursive;
+  font-family: 'Henny Penny', cursive;
 }
 
 .navbar-container .linkek {
@@ -31,7 +35,13 @@
 }
 
 .elso h5 {
-  color: aquamarine;
-  font-size: 3em;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
 }
+
+.img {
+  height: 100%;
+}
+
+
 
