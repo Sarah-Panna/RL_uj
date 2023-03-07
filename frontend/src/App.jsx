@@ -1,12 +1,11 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import NavBar from './components/NavBar';
-import Cart from './pages/Cart';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Record from './pages/Record';
-
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Record from "./pages/Record";
 
 function App() {
   return (
@@ -22,12 +21,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-    
   );
-
-  }
-
-
-
+}
 
 export default App;
