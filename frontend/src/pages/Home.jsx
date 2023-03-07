@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import kep1 from "../images/kep1.png";
 import kep2 from "../images/kep2.png";
 import kep3 from "../images/kep7.png";
@@ -6,6 +6,17 @@ import kep3 from "../images/kep7.png";
 import "./Home.css";
 
 const Home = () => {
+  const [records, setRecords] = useState([]);
+
+  useEffect(() => {
+    const adatLeker = async () => {
+      const data = await fetch("http://localhost:3501/records");
+      const records = await data.json();
+      setRecords(records);
+    };
+
+    adatLeker();
+  }, []);
   return (
     <div className="container">
       <div className="row">
@@ -91,7 +102,14 @@ const Home = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-sm-6">Első</div>
+        <div className="col-sm-6">
+          {records.map((elem) => (
+            <div key={elem._id}>
+              <p>Cím: {elem.name}</p>
+              <img src={elem.image} alt="" />
+            </div>
+          ))}
+        </div>
         <div className="col-sm-6">Második</div>
       </div>
     </div>

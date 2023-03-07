@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 
+body {
+  background-color: blue;
+}
+
 .app {
   display: center;
   background-image: url("./images/kep8.png");

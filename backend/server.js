@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/records', require('./routes/recordRoutes'));
 
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT || 3501;
 
 mongoose.set('strictQuery', false);
 mongoose.connect(process.env.MONGO_URI).then(res => console.log('Sikeres csatlakozás!')).catch(err => console.log(err)); 
